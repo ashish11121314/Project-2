@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/images/LOGO (2).jpg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="https://www.rockstargames.com/gta-online" target="_blank">Games</a></li>
+                    <li><a href="https://www.xbox.com/en-IN/games/gta-v" target="_blank">XBox</a></li>
+                    <li><a href="https://www.flipkart.com/thrustmaster-tca-yoke-pack-boeing-xbox-series-x-s-ww-joystick/p/itm42940eae3de58?pid=ACCGB7HYPK3EAMZ6&lid=LSTACCGB7HYPK3EAMZ6LOXRB6&marketplace=FLIPKART&store=4rr%2Fkm5%2Fr39%2F7n5&srno=b_3_95&otracker=browse&iid=44e5a7c2-681a-450c-96db-72fc2f0e8a1b.ACCGB7HYPK3EAMZ6.SEARCH&ssid=r248e4n5ls0000001675252927873" target="_blank">Controller</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtasa&hl=en_IN&gl=US&pli=1" target="_blank">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/toggle.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>GTA 5 </h2>
+                <h3>for playStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$2000</h4>
+                <a href="https://store.rockstargames.com/game/buy-gta-v" target="_blank">
+                <button type="button"> Buy Now <img src="images/arrow.png"></button></a>
+                <br>
+                <br>
+                <button type="button"> Add To Cart <img src="/images/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="/images/gta 5.jpg" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link">
+            <a href="https://www.facebook.com/gaming/game/grandtheftautov/" target="_blank">
+            <img src="images/facebook.jpg"></a>
+            <a href="https://twitter.com/RockstarGames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <img src="images/twitter.jpg"></a>
+            <a href="https://www.instagram.com/rockstargames/?hl=en" target="_blank">
+            <img src="images/insta.jpg  "></a>
+        </div>
+
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if( menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+
+</body>
+</html>
